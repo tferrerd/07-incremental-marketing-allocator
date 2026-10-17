@@ -1,0 +1,39 @@
+{
+  "dataset": "Criteo Uplift v2.1",
+  "source_urls": [
+    "https://ailab.criteo.com/criteo-uplift-prediction-dataset/",
+    "https://huggingface.co/datasets/criteo/criteo-uplift/resolve/main/criteo-research-uplift-v2.1.csv.gz"
+  ],
+  "license": "CC BY-NC-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "selection": "Every 71st source row (starting at row 0) across all 13,979,592 records; 196,896 real observations. Systematic subset, not the complete dataset or a simple random sample.",
+  "notes": "Attribution: Eustache Diemert, Artem Betlei, Christophe Renaudin, Massih-Reza Amini / Criteo AI Lab, A Large Scale Benchmark for Uplift Modeling (2018). Original feature/treatment/outcome columns are retained. Exclude post-treatment exposure from pre-treatment modeling. Respect v2.1 sampling/design notes; observed incrementality is not the originating company's population effect. Projects 02 and 07 intentionally share this source subset but answer different questions.",
+  "generated_at_utc": "2026-10-17T20:56:40.852505+00:00",
+  "files": [
+    {
+      "path": "data/raw/criteo_uplift_v2_1_sample.csv",
+      "rows": 196896,
+      "columns": [
+        "f0",
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8",
+        "f9",
+        "f10",
+        "f11",
+        "treatment",
+        "conversion",
+        "visit",
+        "exposure"
+      ],
+      "bytes": 45748350,
+      "sha256": "6a14cebb3e0b1a31a0b602ca6175a93ddcf58f6957b3a3ba4744f17f15bedf71"
+    }
+  ],
+  "assets": []
+}
